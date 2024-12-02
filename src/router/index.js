@@ -23,6 +23,17 @@ const router = createRouter({
       name: 'Registrar',
       component: () => import('../modules/registro/views/RegistrarView.vue'),
     },
+    {
+      path: '/users',
+      name: 'Users',
+      component: () => import('../modules/users/components/UsersViews.vue'),
+    },
+    {
+      path: '/users/:id', //:id es un parametro dinamico
+      name: 'UsersDetails',
+      component: () => import('../modules/users/components/UsersDetails.vue'),
+      props: true, //esto pasa automaticamente el parametro id como prop
+    },
   ],
 })
 

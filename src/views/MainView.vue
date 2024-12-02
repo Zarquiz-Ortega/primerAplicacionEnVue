@@ -16,9 +16,6 @@ import { ref } from 'vue';
 
 const texto = ref('');
 
-
-
-
 </script>
 
 <style>
